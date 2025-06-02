@@ -1,9 +1,10 @@
 import express from 'express';
 import mockJobs from '../mockJobs.js';
+import cors from 'cors';
 
 
 const app = express();
-
+app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
