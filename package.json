@@ -4,9 +4,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "build": "echo 'nothing to build'"
   },
   "dependencies": {
+    "@vendia/serverless-express": "^4.12.6",
     "cors": "^2.8.5",
     "express": "^4.19.2"
   }
